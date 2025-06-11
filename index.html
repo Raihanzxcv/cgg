@@ -44,7 +44,7 @@
         .logo {
             font-size: 24px;
             font-weight: bold;
-            color: #3498db;
+            color: #27ae60;
         }
         
         /* Navigation */
@@ -64,7 +64,7 @@
         }
         
         nav ul li a:hover {
-            color: #3498db;
+            color: #27ae60;
         }
         
         /* Search */
@@ -82,6 +82,11 @@
             border-radius: 25px;
             font-size: 16px;
             outline: none;
+        }
+        
+        .search-bar input:focus {
+            border-color: #27ae60;
+            box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.2);
         }
         
         /* Filters */
@@ -103,9 +108,9 @@
         }
         
         .filter-btn:hover, .filter-btn.active {
-            background-color: #3498db;
+            background-color: #27ae60;
             color: #fff;
-            border-color: #3498db;
+            border-color: #27ae60;
         }
         
         /* Gallery */
@@ -129,6 +134,7 @@
         
         .wallpaper-item:hover {
             transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(39, 174, 96, 0.2);
         }
         
         .wallpaper-img {
@@ -155,7 +161,7 @@
         }
         
         .download-btn {
-            background-color: #3498db;
+            background-color: #27ae60;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -166,7 +172,7 @@
         }
         
         .download-btn:hover {
-            background-color: #2980b9;
+            background-color: #219a52;
         }
         
         /* Footer */
@@ -205,12 +211,26 @@
             margin: 0 5px;
             cursor: pointer;
             transition: all 0.3s;
+            border-radius: 4px;
         }
         
         .pagination button.active, .pagination button:hover {
-            background-color: #3498db;
+            background-color: #27ae60;
             color: #fff;
-            border-color: #3498db;
+            border-color: #27ae60;
+        }
+        
+        .pagination button:disabled {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            border-color: #dee2e6;
+            cursor: not-allowed;
+        }
+        
+        .pagination button:disabled:hover {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            border-color: #dee2e6;
         }
 
         /* Responsive */
